@@ -22,10 +22,6 @@ class UserDataService {
   deleteAll() {
     return db.remove();
   }
-
-  findByName(name) {
-    return http.get(`/users?name=${name}`)
-  }
 }
 
 export default new  UserDataService();
